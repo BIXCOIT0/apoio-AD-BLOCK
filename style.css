@@ -1,0 +1,77 @@
+/* Página Pix — Dark/Neon, alinhada ao cartão de doação do popup */
+body {
+  background-color: #12121a;
+  color: #e0e0e0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  margin: 0;
+}
+.pix-page {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  text-align: center;
+}
+.pix-page h1 {
+  font-size: 1.4em;
+  margin-top: 0;
+}
+.pix-intro {
+  color: #a0a0b0;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+.pix-qr-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: inline-block;
+  padding: 16px;
+  margin: 16px 0;
+}
+.pix-qr-card img {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+.pix-recipient {
+  margin: 8px 0 20px;
+}
+.pix-recipient span {
+  color: #a0a0b0;
+}
+.pix-page label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-align: left;
+}
+#pix-code {
+  background-color: #1a1a24;
+  border: 1px solid #333344;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #e0e0e0;
+  font-family: ui-monospace, monospace;
+  font-size: 0.8em;
+  padding: 12px;
+  resize: none;
+  width: 100%;
+  word-break: break-all;
+}
+#btn-copy-pix {
+  background-color: #32bcad;
+  border: none;
+  border-radius: 4px;
+  color: #0d3b36;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 12px;
+  padding: 10px 16px;
+  width: 100%;
+}
+#btn-copy-pix:hover {
+  background-color: #289d90;
+}
+.pix-feedback {
+  color: #32bcad;
+  min-height: 1.2em;
+}

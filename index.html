@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doar via Pix — PapaAnúncio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="pix-page">
+<h1>Doar via Pix</h1>
+<p class="pix-intro">Escaneie o QR Code com o app do seu banco, ou copie o código abaixo. O valor é livre — você escolhe quanto doar.</p>
+<div class="pix-qr-card">
+<img src="qr.svg" alt="QR Code Pix para doação" width="300" height="300">
+</div>
+<p class="pix-recipient"><strong>Marco Antonio Arantes</strong><br><span>Mercado Pago</span></p>
+<label for="pix-code">Pix copia e cola</label>
+<textarea id="pix-code" readonly rows="4">00020126580014br.gov.bcb.pix0136e8a8a1a4-b357-4ad4-b379-a75a942b89c45204000053039865802BR5921Marco Antonio Arantes6009Sao Paulo62230519daqr26493879196705163043F75</textarea>
+<button id="btn-copy-pix" type="button">Copiar código Pix</button>
+<p id="pix-copy-feedback" class="pix-feedback" aria-live="polite"></p>
+</main>
+<script src="pix.js"></script>
+</body>
+</html>

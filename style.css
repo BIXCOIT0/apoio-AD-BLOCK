@@ -75,3 +75,15 @@ body {
   color: #32bcad;
   min-height: 1.2em;
 }
+
+
+/* O QR conserva proporção e margem branca em telas estreitas. */
+* { box-sizing: border-box; }
+.pix-page { width: 100%; }
+.pix-qr-card { max-width: 100%; }
+.pix-qr-card img { width: 100%; max-width: 300px; height: auto; aspect-ratio: 1; }
+:focus-visible { outline: 3px solid #00e5ff; outline-offset: 3px; }
+@media (forced-colors: active) {
+  #btn-copy-pix { border: 1px solid ButtonText; }
+  .pix-qr-card { forced-color-adjust: none; }
+}

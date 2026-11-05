@@ -36,3 +36,9 @@ Preparar PR com resultado dos testes. Confirmar a origem de publicação em Sett
 ## Escopo
 
 Repositório público dedicado ao apoio. Não incluir código privado da extensão, diagnósticos de usuários, analytics ou backend de pagamento durante a organização documental.
+
+## Testes automatizados
+
+Execute `node scripts/test-support.cjs`: verifica CRC do Pix e cinco cenários simulados de Clipboard/fallback, sem transferência. No CI, ferramentas de teste são instaladas com versões explícitas fora dos arquivos publicados; `scripts/test-browser.cjs` abre apenas fixtures locais, decodifica o QR e compara com o campo exibido, verifica quatro larguras e zoom CSS 1x/2x e salva capturas.
+
+O workflow de validação não publica a página. Zoom CSS não substitui teste de zoom real do navegador nem leitor de tela. A conferência de beneficiário pelo responsável continua necessária. QR/code iguais não provam identidade do destinatário.

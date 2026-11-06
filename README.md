@@ -31,6 +31,8 @@ Mudança de chave, beneficiário ou código exige instrução explícita do resp
 
 ## Publicação e recuperação
 
+[Guia operacional de manutenção](MANUTENCAO.md).
+
 Preparar PR com resultado dos testes. Confirmar a origem de publicação em Settings → Pages. Após merge, verificar a página publicada. Em regressão de layout/script, reverter o commit e conferir a página; em problema de dados Pix, avisar o responsável e preservar o histórico.
 
 ## Escopo
